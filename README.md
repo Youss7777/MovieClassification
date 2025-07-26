@@ -18,5 +18,5 @@ This project implements a model capable of predicting the most probable genres o
 
 - **Transformer-based model**: DistilBERT is fine-tuned on a custom dataset of movie synopses.
 - **Multi-label support**: Movies can have multiple genres predicted.
-- **Imbalanced data handling**: Uses `BCEWithLogitsLoss` with biased class weights to give higher importance to rare genres.
+- **Imbalanced data handling**: Uses weighted loss function to give higher importance to rare genres.
 - **API endpoints**: Exposes an API with two endpoints to train the model and use it to make and return predictions.
